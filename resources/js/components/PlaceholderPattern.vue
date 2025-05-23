@@ -5,12 +5,18 @@ const patternId = computed(() => `pattern-${Math.random().toString(36).substring
 </script>
 
 <template>
-    <svg class="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" fill="none">
-        <defs>
-            <pattern :id="patternId" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
-                <path d="M-1 5L5 -1M3 9L8.5 3.5" stroke-width="0.5"></path>
-            </pattern>
-        </defs>
-        <rect stroke="none" :fill="`url(#${patternId})`" width="100%" height="100%"></rect>
-    </svg>
+    <div class="flex flex-col items-center gap-6 p-7 ">
+  <div>
+    <img class="size-48 shadow-xl rounded-md" alt="" src="/img/cover.png" />
+  </div>
+  <div class="flex items-center">
+    <span class="text-2xl font-medium">Class Warfare</span>
+    <span class="font-medium text-sky-500">The Anti-Patterns</span>
+    <span class="flex gap-2 font-medium text-gray-600 dark:text-gray-400">
+      <span>No. 4</span>
+      <span>·</span>
+      <span>2025</span>
+    </span>
+  </div>
+</div>
 </template>

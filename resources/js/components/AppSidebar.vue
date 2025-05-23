@@ -13,6 +13,14 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: '/dashboard',
         icon: LayoutGrid,
+    },{
+        title: 'Users',
+        href: '/users',
+        icon: LayoutGrid,
+    },{
+        title: 'Workers',
+        href: '/workers',
+        icon: LayoutGrid,
     },
 ];
 

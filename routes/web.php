@@ -12,6 +12,10 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('users', function () {
+    return Inertia::render('Users');
+})->middleware(['auth', 'verified'])->name('users');
+
 
 Route::get('/post/{pos}', function ($pos) {
     $faker = Faker::create();
