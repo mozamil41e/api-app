@@ -27,7 +27,7 @@ Route::get('/post/{pos}', function ($pos) {
             "date" => $faker->date
         ]);
     }
-    return response()->json($posts);
+    return $posts;
 });
 
 
